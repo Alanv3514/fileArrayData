@@ -17,8 +17,8 @@ LR use "\n"
 const arrayData = await getFileDataToArray("./test.txt", "\n\r", ";","utf8");
 
 ### Append:
-arrayData = [a1,a2,a3,a4,a5, ... , an];
-matrixData = [[a1,a2,a3,a4,a5, ... , an],[b1,b2,b3,b4,b5, ... , bn], ...];
+arrayData = \[a1,a2,a3,a4,a5, ... , an\];
+matrixData = \[\[a1,a2,a3,a4,a5, ... , an\],\[b1,b2,b3,b4,b5, ... , bn\], ...\];
 
 await appendArrayDataToFile ("./test.txt", arrayData, "\n\r", ";","utf8");
 await appendMatrixDataToFile ("./test.txt", matrixData, "\n\r", ";","utf8");
