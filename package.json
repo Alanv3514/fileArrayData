@@ -1,0 +1,26 @@
+{
+  "name": "filearraydata",
+  "version": "1.0.0",
+  "description": "fileArrayData is a Node.js module that provides utility functions for reading data from a file into an array and appending array data back into a file. It simplifies the process of handling file data in array format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alanv3514/fileArrayData.git"
+  },
+  "keywords": [
+    "file",
+    "array",
+    "fs",
+    "appendFile",
+    "readFile"
+  ],
+  "author": "Alan Vinzon",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Alanv3514/fileArrayData/issues"
+  },
+  "homepage": "https://github.com/Alanv3514/fileArrayData#readme"
+}
