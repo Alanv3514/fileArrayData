@@ -4,21 +4,32 @@ fileArrayData is a Node.js module that provides utility functions for reading da
 
 ## Example:
 
+CRLF use "\r\n"
+
+LR use "\n"
+
+
 test.txt contains UTF-8 CRLF data like:
+
 a1;a2;a3;a4;a5;a6;a7
+
 b1;b2;b3;b4;b5;b6;b7
+
 ...
+
 n1;n2;n3;n4;n5;n6;n7
 
-CRLF use "\r\n"
-LR use "\n"
+
+
 
 ### Reading:
 const arrayData = await getFileDataToArray("./test.txt", "\n\r", ";","utf8");
 
 ### Append:
-arrayData = \[a1,a2,a3,a4,a5, ... , an\];
-matrixData = \[\[a1,a2,a3,a4,a5, ... , an\],\[b1,b2,b3,b4,b5, ... , bn\], ...\];
+arrayData = [ a1,a2,a3,a4,a5, ... , an ]
+
+matrixData =  [ [ a1,a2,a3,a4,a5, ... , an ], [ b1,b2,b3,b4,b5, ... , bn ], ... ];
 
 await appendArrayDataToFile ("./test.txt", arrayData, "\n\r", ";","utf8");
+
 await appendMatrixDataToFile ("./test.txt", matrixData, "\n\r", ";","utf8");
