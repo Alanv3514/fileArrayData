@@ -1,6 +1,6 @@
 {
   "name": "filearraydata",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "fileArrayData is a Node.js module that provides utility functions for reading data from a file into an array and appending array data back into a file. It simplifies the process of handling file data in array format.",
   "main": "index.js",
   "scripts": {
