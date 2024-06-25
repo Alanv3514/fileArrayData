@@ -1,11 +1,17 @@
 const fs = require('fs').promises;
 
 const readFromFile = async (file, coding) => {
+    let fileHandle;
     try {
-        const data = await fs.readFile(file, coding);
+        fileHandle = await fs.open(file, 'r');
+        const data = await fileHandle.readFile(coding);
         return data;
     } catch (err) {
         throw err;
+    } finally {
+        if (fileHandle) {
+            await fileHandle.close();
+        }
     }
 };
 
@@ -46,6 +52,7 @@ const getFileDataToArray = async (fileName, lineBreak, phraseSplitter,coding) =>
 
 
 module.exports = {
+    readFromFile,
     appendArrayDataToFile,
     appendMatrixDataToFile,
     getFileDataToArray
